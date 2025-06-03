@@ -1,3 +1,6 @@
+on:
+  workflow_dispatch:
+  
 steps:
   - uses: actions/checkout@v1
   - name: npm install and build webpack
