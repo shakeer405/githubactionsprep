@@ -1,6 +1,6 @@
 on:
   workflow_dispatch:
-name: Example Workflow
+name: npm build Workflow
 
 
 jobs:
@@ -9,4 +9,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Run a one-line script
-        run: echo "Hello, world!"
+        run: |
+          npm install
+          npm run build
