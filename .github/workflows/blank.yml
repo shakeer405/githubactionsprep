@@ -8,10 +8,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - name: Show event trigger
+        run: echo "Triggered by ${{ github.event_name }}"
       - name: Run a one-line script
         run: |
           npm init -y
           npm install
           npm run build
-      - name: Show event trigger
-        run: echo "Triggered by ${{ github.event_name }}"
+      
