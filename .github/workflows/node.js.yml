@@ -21,6 +21,13 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+    - name: Cache npm dependencies
+      uses: actions/cache@v4
+      with:
+          path: ~/.npm
+          key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-npm-
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v4
       with:
