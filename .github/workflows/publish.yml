@@ -31,3 +31,8 @@ jobs:
           context: .
           push: true
           tags: ${{ steps.meta.outputs.tags }}
+
+  show-os-ver:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo "Running on $RUNNER_OS"
