@@ -29,7 +29,7 @@ jobs:
         run: mvn clean install -B
 
       - name: Archive JAR artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: my-java-artifact
           path: target/*.jar
