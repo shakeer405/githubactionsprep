@@ -16,4 +16,4 @@ jobs:
         run: echo "🎉 Hello from GitHub Actions!"
 
       - name: Show current date and time
-        run: date
+        run: date; ls
