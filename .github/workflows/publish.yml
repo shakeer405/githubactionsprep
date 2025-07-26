@@ -1,8 +1,6 @@
 name: Publish to Docker
-on:
-  push:
-    branches:
-      - main
+on: workflow_dispatch 
+
 permissions:
   packages: write
   contents: read
