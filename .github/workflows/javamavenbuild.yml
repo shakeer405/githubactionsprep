@@ -1,7 +1,8 @@
 name: Java Maven Build
 
 on:
-  workflow_dispatch
+  push:
+    branches: [main]
 
 jobs:
   build:
