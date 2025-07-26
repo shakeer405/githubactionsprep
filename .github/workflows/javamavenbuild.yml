@@ -27,7 +27,7 @@ jobs:
             ${{ runner.os }}-maven-
 
       - name: Build with Maven
-        run: ls; mvn install;  mvn -f githubactionsprep/bank-ocr/pom.xml clean install -B
+        run: ls; mvn install;  mvn -f /home/runner/work/githubactionsprep/githubactionsprep/bank-ocr/pom.xml clean install -B
         
       - name: Archive JAR artifact
         uses: actions/upload-artifact@v4
