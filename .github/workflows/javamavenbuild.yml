@@ -12,7 +12,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
       - name: custom hellow action
-        uses: shakeer405/hello-action@v1
+        uses: shakeer405/customgiyhubactions@v1
       - name: Set up Java
         uses: actions/setup-java@v4
         with:
