@@ -13,6 +13,8 @@ jobs:
         uses: actions/checkout@v3
       - name: custom hellow action
         uses: shakeer405/customgiyhubactions/hello-action@v1
+        with:
+          name: "Shakeer"
       - name: Set up Java
         uses: actions/setup-java@v4
         with:
